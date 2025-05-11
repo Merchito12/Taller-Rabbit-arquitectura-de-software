@@ -7,10 +7,13 @@ Este proyecto implementa un sistema de **notificaciones** utilizando **RabbitMQ*
 ### **Productor**:
 - El **Productor** envía **notificaciones** a la cola `notifications` en **RabbitMQ**.
 - Se generan 10 mensajes de notificación de forma secuencial, y cada uno es enviado a la cola `notifications`.
+![Mensajes Enviados](images/enviados.png)
+(images/rabbit10.png)
 
   
 
 ### **Consumidor**:
 - El **Consumidor** está suscrito a la cola `notifications` y espera recibir los mensajes.
 - Al recibir cada mensaje, el **Consumidor** lo imprime en la consola.
-
+![Mensajes Recibidos](images/recibidos.png)
+(images/rabbit.png)
